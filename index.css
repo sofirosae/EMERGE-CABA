@@ -112,24 +112,14 @@ body {
 }
 
 .sobre-nosotros {
+  background-image: url("./Fotos/Fondo2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 120px 20px; /* Ajustamos altura y margen interior */
+  color: white; /* Color del texto para que contraste */
   text-align: center;
-  padding: 2rem;
-  background-color: #f5f4f4;
-}
-
-.sobre-nosotros p {
-  max-width: 800px;
-  margin: 0 auto 2rem auto;
   font-size: 1.2rem;
-  line-height: 1.5;
-}
-
-.imagen-sobre-nosotros img {
-  width: 80%;
-  max-width: 700px;
-  border-radius: 15px;
-  object-fit: cover;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
 .separador {
@@ -187,4 +177,3 @@ body {
 .form-comentario button:hover {
   background-color: #2e3b2c;
 }
-
