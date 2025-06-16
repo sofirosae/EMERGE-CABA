@@ -112,15 +112,19 @@ body {
 }
 
 .sobre-nosotros {
-  position: relative;
-  background-image: url("./Fotos/Fondo2.jpg");
+  background: url("./Fotos/Fondo2.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 500px;
+  height: 100vh; /* Ahora ocupa el 100% de la altura de la pantalla */
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  padding: 80px 20px;
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
 }
 
 .sobre-nosotros .overlay {
