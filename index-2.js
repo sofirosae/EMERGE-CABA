@@ -27,26 +27,34 @@ function volverAEscaneo() {
   document.getElementById("info").classList.add("hidden");
   document.getElementById("escaneo").classList.remove("hidden");
 }
+document.addEventListener("DOMContentLoaded", function () {
+  const items = document.querySelectorAll(".item");
 
-function abrirModal(genero) {
-  const modal = document.getElementById("modal-" + genero);
-  if (modal) {
-    modal.style.display = "block";
-  }
-}
-
-function cerrarModal(genero) {
-  const modal = document.getElementById("modal-" + genero);
-  if (modal) {
-    modal.style.display = "none";
-  }
-}
-
-window.onclick = function(event) {
-  const modales = document.querySelectorAll(".modal");
-  modales.forEach(function(modal) {
-    if (event.target == modal) {
-      modal.style.display = "none";
-    }
+  items.forEach(function (item) {
+    item.addEventListener("click", function () {
+      const genero = item.dataset.genero;
+      const modal = document.querySelector(`#modal-${genero}`);
+      if (modal) {
+        modal.style.display = "block";
+      }
+    });
   });
-};
+
+  // Cerrar modal al hacer click en la X
+  const botonesCerrar = document.querySelectorAll("[data-close]");
+  botonesCerrar.forEach(function (boton) {
+    boton.addEventListener("click", function () {
+      boton.closest(".modal").style.display = "none";
+    });
+  });
+
+  // Cerrar modal al hacer click fuera del contenido
+  window.addEventListener("click", function (e) {
+    document.querySelectorAll(".modal").forEach(function (modal) {
+      if (e.target === modal) {
+        modal.style.display = "none";
+      }
+    });
+  });
+});
+
