@@ -6,6 +6,7 @@
 
 body {
   font-family: cursive;
+  background-color: #fff;
 }
 
 .nav-background {
@@ -15,148 +16,148 @@ body {
   height: auto;
 }
 
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.emerge-caba-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.circular-logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  background-color: white;
+}
+
 .nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 4rem;
+  gap: 2rem;
   flex-wrap: wrap;
-  color: #000000;
+  margin-bottom: 1rem;
 }
 
 .nav a {
-  color: #000000;
   text-decoration: none;
-  font-size: medium;
+  color: black;
   font-weight: bold;
+  font-size: 1rem;
 }
 
 .boton-pedido {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
   background-color: #e4e6e5;
   color: #425749;
-  padding: 0.6rem 1.2rem;
+  padding: 0.5rem 1rem;
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
-  z-index: 10;
 }
 
 .boton-pedido:hover {
   background-color: #93a091;
 }
 
-.circular-logo {
-  width: 15vw;
-  max-width: 200px;
-  height: 15vw;
-  max-height: 200px;
-  border-radius: 50%;
-  object-fit: cover;
-  background-color: white;
-  display: block;
-  margin: 0 auto 1rem;
-}
-
 .banner-fondo {
   width: 100%;
   height: 60vh;
-  background-image: url('./Fotos/Fondo.jpg');
+  background-image: url("./Fotos/Fondo.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.seccion {
-  padding: 2rem;
-  text-align: center;
-}
-
 .section-title {
-  font-size: 32px;
-  margin-bottom: 2rem;
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 2rem;
+  font-family: cursive;
 }
 
 .galeria {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
-  max-width: 1200px;
-  margin: 0 auto;
+  gap: 2rem;
+  padding: 1rem 2rem;
 }
 
-.galeria .item {
+.item {
   display: flex;
   flex-direction: column;
   align-items: center;
+  cursor: pointer;
 }
 
-.galeria .item img {
+.item img {
   width: 150px;
   height: 150px;
-  object-fit: cover;
   border-radius: 50%;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
-.galeria .item .caption {
-  margin-top: 10px;
-  font-size: 14px;
-  color: #555;
-  text-transform: capitalize;
+.caption {
+  margin-top: 0.5rem;
+  font-style: italic;
 }
 
-@media (max-width: 768px) {
-  .galeria .item img {
-    width: 120px;
-    height: 120px;
-  }
-  .section-title {
-    font-size: 24px;
-  }
+.sobre-nosotros {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f5f4f4;
 }
 
-@media (max-width: 480px) {
-  .galeria {
-    gap: 20px;
-  }
-  .galeria .item img {
-    width: 100px;
-    height: 100px;
-  }
+.sobre-nosotros p {
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.imagen-sobre-nosotros img {
+  width: 80%;
+  max-width: 700px;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.separador {
+  height: 3rem;
+  background-color: transparent;
 }
 
 .footer {
   background-color: #BFAD80;
-  padding: 2rem 0;
-  max-width: 1100px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-
-.comentarios {
-  flex: 1;
-  min-width: 300px;
-  background-color: #BFAD80;
-  padding: 2rem 0;
+  padding: 2rem 1rem;
+  text-align: center;
 }
 
 .comentarios-box {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
   border-radius: 12px;
-  padding: 1.5rem;
-  max-width: 800px;
-  width: 90%;
+  padding: 2rem;
+  max-width: 600px;
   margin: 0 auto;
-  color: black;
-  text-align: center;
+}
+
+.comentarios-box h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.comentarios-box p {
+  margin-bottom: 1rem;
 }
 
 .form-comentario {
@@ -166,22 +167,19 @@ body {
 }
 
 .form-comentario input,
-.form-comentario textarea,
-.form-comentario button {
+.form-comentario textarea {
+  border: 1px solid #ccc;
   border-radius: 8px;
-  border: none;
   padding: 0.8rem;
   font-family: inherit;
-}
-
-.form-comentario textarea {
-  min-height: 100px;
-  resize: vertical;
 }
 
 .form-comentario button {
   background-color: #425749;
   color: white;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 8px;
   font-weight: bold;
   cursor: pointer;
 }
@@ -190,69 +188,3 @@ body {
   background-color: #2e3b2c;
 }
 
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 9999;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  backdrop-filter: blur(4px);
-  background-color: rgba(0, 0, 0, 0.6);
-}
-
-.modal-contenido {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 30px;
-  border-radius: 16px;
-  width: 80%;
-  max-width: 600px;
-  text-align: center;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-  transition: all 0.3s ease;
-  transform: scale(0.95);
-  animation: aparecer 0.3s ease forwards;
-}
-
-@keyframes aparecer {
-  to {
-    transform: scale(1);
-  }
-}
-
-.cerrar {
-  color: #333;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: color 0.3s;
-}
-
-.cerrar:hover {
-  color: #e74c3c;
-}
-
-.modal-imagen {
-  width: 200px;
-  height: auto;
-  border-radius: 12px;
-  margin: 10px 0;
-  object-fit: cover;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-.fondo-extra {
-  background-image: url('./Fotos/Fondo2.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  height: 400px;
-  width: 100%;
-}
-#sobre {
-  margin-bottom: 100px; /* o el valor que quieras */
-}
