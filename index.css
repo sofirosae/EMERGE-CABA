@@ -85,10 +85,11 @@ body {
 
 .galeria {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap; /* No permite saltos de línea */
   justify-content: center;
-  gap: 2rem;
-  padding: 1rem 2rem;
+  gap: 30px;
+  overflow-x: auto; /* En caso de que no entren, permite scroll horizontal */
+  padding: 20px;
 }
 
 .item {
@@ -201,4 +202,9 @@ body {
 
 .form-comentario button:hover {
   background-color: #2e3b2c;
+}
+@media (max-width: 900px) {
+  .galeria {
+    flex-wrap: wrap;
+  }
 }
