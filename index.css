@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: cursive;
+}
+
 .nav-background {
   background-color: #f5f4f4;
   position: relative;
@@ -24,7 +28,6 @@
 .nav a {
   color: #000000;
   text-decoration: none;
-  font-style: normal;
   font-size: medium;
   font-weight: bold;
 }
@@ -39,7 +42,6 @@
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
-  font-family: "Bebas Neue", sans-serif;
   z-index: 10;
 }
 
@@ -59,10 +61,6 @@
   margin: 0 auto 1rem;
 }
 
-body {
-  font-family: cursive;
-}
-
 .banner-fondo {
   width: 100%;
   height: 60vh;
@@ -72,13 +70,62 @@ body {
   background-repeat: no-repeat;
 }
 
-.fondo-extra {
-  background-image: url('./Fotos/Fondo2.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  height: 400px;
-  width: 100%;
+.seccion {
+  padding: 2rem;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 32px;
+  margin-bottom: 2rem;
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.galeria .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.galeria .item img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.galeria .item .caption {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+  text-transform: capitalize;
+}
+
+@media (max-width: 768px) {
+  .galeria .item img {
+    width: 120px;
+    height: 120px;
+  }
+  .section-title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .galeria {
+    gap: 20px;
+  }
+  .galeria .item img {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 .footer {
@@ -141,54 +188,6 @@ body {
   background-color: #2e3b2c;
 }
 
-.galeria {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-}
-
-.galeria .item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.galeria .item img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 50%;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-}
-
-.galeria .item .caption {
-  margin-top: 10px;
-  font-size: 14px;
-  color: #555;
-  text-transform: capitalize;
-}
-
-@media (max-width: 768px) {
-  .galeria .item img {
-    width: 120px;
-    height: 120px;
-  }
-  .section-title {
-    font-size: 24px;
-  }
-}
-
-@media (max-width: 480px) {
-  .galeria {
-    gap: 20px;
-  }
-  .galeria .item img {
-    width: 100px;
-    height: 100px;
-  }
-}
-
 .modal {
   display: none;
   position: fixed;
@@ -217,7 +216,9 @@ body {
 }
 
 @keyframes aparecer {
-  to { transform: scale(1); }
+  to {
+    transform: scale(1);
+  }
 }
 
 .cerrar {
@@ -239,5 +240,15 @@ body {
   border-radius: 12px;
   margin: 10px 0;
   object-fit: cover;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
+
+.fondo-extra {
+  background-image: url('./Fotos/Fondo2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 400px;
+  width: 100%;
+}
+

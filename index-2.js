@@ -27,6 +27,8 @@ function volverAEscaneo() {
   document.getElementById("info").classList.add("hidden");
   document.getElementById("escaneo").classList.remove("hidden");
 }
+
+// Modales de los géneros musicales
 function abrirModal(genero) {
   const modal = document.getElementById("modal-" + genero);
   if (modal) {
@@ -41,6 +43,7 @@ function cerrarModal(genero) {
   }
 }
 
+// Cierre global de modales al clickear afuera
 window.onclick = function(event) {
   const modales = document.querySelectorAll(".modal");
   modales.forEach(function(modal) {
