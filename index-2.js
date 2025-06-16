@@ -27,9 +27,12 @@ function volverAEscaneo() {
   document.getElementById("info").classList.add("hidden");
   document.getElementById("escaneo").classList.remove("hidden");
 }
+
 document.addEventListener("DOMContentLoaded", function () {
+  // Seleccionamos todos los items de la galería
   const items = document.querySelectorAll(".item");
 
+  // Le agregamos a cada item el evento click
   items.forEach(function (item) {
     item.addEventListener("click", function () {
       const genero = item.dataset.genero;
@@ -40,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Cerrar modal al hacer click en la X
+  // Agregamos el evento de cerrar a las X de cada modal
   const botonesCerrar = document.querySelectorAll("[data-close]");
   botonesCerrar.forEach(function (boton) {
     boton.addEventListener("click", function () {
@@ -48,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Cerrar modal al hacer click fuera del contenido
+  // Permite cerrar el modal al hacer click fuera del contenido
   window.addEventListener("click", function (e) {
     document.querySelectorAll(".modal").forEach(function (modal) {
       if (e.target === modal) {

@@ -75,32 +75,31 @@
   </div>
 </div>
 
-  <div id="sobre" class="sobre-nosotros">
-    <div class="overlay">
-      <h2 class="section-title">Sobre Nosotros</h2>
-      <p>¡Bienvenidos a Emerge CABA! Somos un espacio creado para dar visibilidad a los artistas emergentes de la Ciudad de Buenos Aires.
-        Creemos en el talento local, en las historias que recién empiezan, en la potencia de los nuevos sonidos, imágenes y expresiones.
-        Nuestra misión es ser una plataforma donde cada artista pueda mostrar su obra, conectarse con el público y ser parte activa de la escena cultural de la ciudad.
-        En Emerge CABA vas a encontrar perfiles de artistas, un mapa interactivo con sus obras, agenda de eventos, comunidad, blog y mucho más.
-        Queremos que el arte circule, que las oportunidades aparezcan y que todos tengan un lugar para empezar a mostrarse.
-        Si sos artista o simplemente amás el arte, este espacio es para vos. Sumate, recorré, descubrí.</p>
-      </div>
+<div id="sobre" class="sobre-nosotros">
+  <div class="overlay">
+    <h2 class="section-title">Sobre Nosotros</h2>
+    <p>¡Bienvenidos a Emerge CABA! Somos un espacio creado para dar visibilidad a los artistas emergentes de la Ciudad de Buenos Aires. Creemos en el talento local, en las historias que recién empiezan, en la potencia de los nuevos sonidos, imágenes y expresiones. Nuestra misión es ser una plataforma donde cada artista pueda mostrar su obra, conectarse con el público y ser parte activa de la escena cultural de la ciudad. En Emerge CABA vas a encontrar perfiles de artistas, un mapa interactivo con sus obras, agenda de eventos, comunidad, blog y mucho más. Queremos que el arte circule, que las oportunidades aparezcan y que todos tengan un lugar para empezar a mostrarse. Si sos artista o simplemente amás el arte, este espacio es para vos. Sumate, recorré, descubrí.</p>
+  </div>
+</div>
+
+<div class="separador"></div>
+
+</main>
+
+<footer id="contacto" class="footer">
+  <div class="comentarios">
+    <div class="comentarios-box">
+      <h3>Los leemos</h3>
+      <p>Dejanos tu opinión sobre tu experiencia en EMERGE CABA:</p>
+      <form class="form-comentario" onsubmit="event.preventDefault(); alert('¡Gracias por tu comentario!');">
+        <input type="text" placeholder="Tu nombre" required />
+        <textarea placeholder="Escribí tu comentario..." rows="4" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
     </div>
-    <div class="separador"></div> <!-- Agregamos separación visual -->
-  </main>
-  <footer id="contacto" class="footer">
-    <div class="comentarios">
-      <div class="comentarios-box">
-        <h3>Los leemos</h3>
-        <p>Dejanos tu opinión sobre tu experiencia en EMERGE CABA:</p>
-        <form class="form-comentario" onsubmit="event.preventDefault(); alert('¡Gracias por tu comentario!');">
-          <input type="text" placeholder="Tu nombre" required />
-          <textarea placeholder="Escribí tu comentario..." rows="4" required></textarea>
-          <button type="submit">Enviar</button>
-        </form>
-      </div>
-    </div>
-  </footer>
+  </div>
+</footer>
+<!-- Modal Clásica -->
 <div id="modal-clasica" class="modal" data-genero="clasica">
   <div class="modal-contenido">
     <span class="cerrar" data-close>&times;</span>
@@ -109,159 +108,133 @@
     <img src="https://www.barilochense.com/suplementos/semana-musical-2020/fotos/59855.jpg" alt="Lucas Brass" class="modal-imagen">
     <p>A los 17 años, Lucas Brass se destaca como uno de los nuevos talentos del chelo en Argentina, mostrando una notable habilidad tecnica y musicalidad.</p>
     <a href="https://www.clarin.com/espectaculos/musica/nuevos-exponentes-argentinos-musica-clasica_0_HyiVnO5mm.html" target="_blank">Ver más</a>
+
     <h3>Hernán Brignani</h3>
     <img src="https://yt3.googleusercontent.com/ytc/AIdro_nGRLS5sCar2MMs-8F8EOBTInPzgFTWFYN_Y_HBwGpX3SY=s900-c-k-c0x00ffffff-no-rj" alt="Hernán Brignani" class="modal-imagen">
-    <p>Musico y compositor que abarca una diversidad de generos, desde el folclore argentino hasta la musica clasica instrumental.
-      Su obra incluye compositores como instrumentales MW-2003 MW- (2020), fusionando elementos tradicionales y contemporaneos.
-    </p>
+    <p>Musico y compositor que abarca una diversidad de generos, desde el folclore argentino hasta la musica clasica instrumental. Su obra incluye compositores como instrumentales MW-2003 MW- (2020), fusionando elementos tradicionales y contemporaneos.</p>
     <a href="https://es.wikipedia.org/wiki/Hern%C3%A1n_Brignani" target="_blank">Ver más</a>
   </div>
 </div>
 
+<!-- Modal Blues -->
 <div id="modal-blues" class="modal" data-genero="blues">
   <div class="modal-contenido">
     <span class="cerrar" data-close>&times;</span>
     <h2>Blues</h2>
     <h3>La Rata Blusera</h3>
     <img src="https://laratabluesera.cl/wp-content/uploads/2024/05/JSB-0544-1024x683.jpg" alt="La Rata Blusera" class="modal-imagen">
-    <p>Banda de blues formada en 2001 en Valdivia (Chile), integrada por músicos argentinos. Han sido teloneros de artistas como 
-      Miguel "Botago" Vilanova y han realizado giras por Chile y Argentina. Su estilo fusiona blues con influencias del rock nacional.
-    </p>
+    <p>Banda de blues formada en 2001 en Valdivia (Chile), integrada por músicos argentinos. Han sido teloneros de artistas como Miguel "Botago" Vilanova y han realizado giras por Chile y Argentina. Su estilo fusiona blues con influencias del rock nacional.</p>
     <a href="https://es.wikipedia.org/wiki/La_Rata_Blusera" target="_blank">Ver más</a>
 
     <h3>Lito Blues Band</h3>
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR83ISvuBfIUmhesFfT6HiVWrVQQMzSCUW3Ow&s" alt="Lito Blues Band" class="modal-imagen">
-    <p>Lito Nebbia, reconocido musico Argentino, lidera esta banda que ofrece una propuesta de blues y rock con una gran impronta nacional.
-      Su estilo directo, con letras crudas y su inconfundible sonido, ha ido mejorando influyentemente en la renovacion del blues en la Argentina.
-      La banda se presenta regularmente en escenarios locales, manteniendo viva la tradicion del blues en el pais.
-    </p>
+    <p>Lito Nebbia, reconocido musico Argentino, lidera esta banda que ofrece una propuesta de blues y rock con una gran impronta nacional. Su estilo directo, con letras crudas y su inconfundible sonido, ha ido mejorando influyentemente en la renovacion del blues en la Argentina. La banda se presenta regularmente en escenarios locales, manteniendo viva la tradicion del blues en el pais.</p>
     <a href="https://es.wikipedia.org/wiki/Lito_Blues_Band" target="_blank">Ver más</a>
   </div>
 </div>
 
+<!-- Modal Rock -->
 <div id="modal-rock" class="modal" data-genero="rock">
   <div class="modal-contenido">
     <span class="cerrar" data-close>&times;</span>
     <h2>Rock</h2>
     <h3>.MAR</h3>
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/.MAR_-_Sesi%C3%B3n_de_fotos_oficial_%282023%29.jpg/1200px-.MAR_-_Sesi%C3%B3n_de_fotos_oficial_%282023%29.jpg" alt=".MAR" class="modal-imagen">
-    <p>Es una banda de rock que se caracteriza por su sonido progresivo y experimental, fusionando rock, post-rock y metal con estructuras complejas
-      y atmosfericas densas. Han sido reconocidos en la escena local y han abierto para bandas internacionales como Gojira y Trivium, ganando una base 
-      de seguidores fieles en el ambito underground del rock Argentino.
-    </p>
+    <p>Es una banda de rock que se caracteriza por su sonido progresivo y experimental, fusionando rock, post-rock y metal con estructuras complejas y atmosfericas densas. Han sido reconocidos en la escena local y han abierto para bandas internacionales como Gojira y Trivium, ganando una base de seguidores fieles en el ambito underground del rock Argentino.</p>
     <a href="https://es.wikipedia.org/wiki/.MAR" target="_blank">Ver más</a>
 
     <h3>Koino Yokan</h3>
     <img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Koino_Yokan_-_videoclip_Donde_vas_a_estar_-_PH_Agustina_Mangaretto.jpg" alt="Koino Yokan" class="modal-imagen">
-    <p>Dúo musical originario de Buenos Aires, formado en 2018. Comenzaron haciendo versiones de canciones populares y luego se enfocaron en su propia musica, 
-      fusionando rock con influencias de artistas como Spinetta y Fito Paez.
-    </p>
+    <p>Dúo musical originario de Buenos Aires, formado en 2018. Comenzaron haciendo versiones de canciones populares y luego se enfocaron en su propia musica, fusionando rock con influencias de artistas como Spinetta y Fito Paez.</p>
     <a href="https://es.wikipedia.org/wiki/Koino_Yokan" target="_blank">Ver más</a>
   </div>
 </div>
 
+<!-- Modal Tango -->
 <div id="modal-tango" class="modal" data-genero="tango">
   <div class="modal-contenido">
     <span class="cerrar" data-close>&times;</span>
     <h2>Tango</h2>
     <h3>Milagros Amud</h3>
     <img src="https://yt3.googleusercontent.com/1uqM3gDz4cznMemod4dNU1MRAVEuxQT-GnfV76dw2d0sHy7_zdnjlXf_D8bPAjtfqRNiNxpu3A=s900-c-k-c0x00ffffff-no-rj" alt="Milagros Amud" class="modal-imagen">
-    <p>Joven cantante de tango que ha cautivado al publico con su voz emotiva y su presencia en el escenario. Ha participado en diversos festivales de tango y continua ganando 
-      reconocimiento en la escena musical.
-    </p>
+    <p>Joven cantante de tango que ha cautivado al publico con su voz emotiva y su presencia en el escenario. Ha participado en diversos festivales de tango y continua ganando reconocimiento en la escena musical.</p>
     <a href="https://www.instagram.com/milagrosamud/" target="_blank">Instagram</a>
 
     <h3>Diego Schissi Quinteto</h3>
     <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Diego_Schissi.png" alt="Diego Schissi Quinteto" class="modal-imagen">
-    <p>Conjunto liderado por el pianista y compositor Diego Schissi, que fusiona el tango tradicional con influencia del jazz y la musica contemporanea.
-      Han sido reconocidos con premios Gardel y Konex, y han realizado giras internacionales.
-    </p>
+    <p>Conjunto liderado por el pianista y compositor Diego Schissi, que fusiona el tango tradicional con influencia del jazz y la musica contemporanea. Han sido reconocidos con premios Gardel y Konex, y han realizado giras internacionales.</p>
     <a href="https://es.wikipedia.org/wiki/Diego_Schissi" target="_blank">Ver más</a>
   </div>
 </div>
-
+<!-- Modal Jazz -->
 <div id="modal-jazz" class="modal" data-genero="jazz">
   <div class="modal-contenido">
     <span class="cerrar" data-close>&times;</span>
     <h2>Jazz</h2>
     <h3>Chita (Francisca Gil)</h3>
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfrOkVPdjxmPiqSzWB_fE9LgWQ3ux3txwXPg&s" alt="Chita (Francisca Gil)" class="modal-imagen">
-    <p>Chita es una cantante y compositora Argentina que fusiona jazz, R&B y soul en su musica. Estudio jazz en londres y ha trabajado con artistas como Ca7riel y Cazzu.
-      Su album "Atelier", grabado en los Angeles, refleja su estilo unico y ha sido bien recibido por la critica.
-    </p>
+    <p>Chita es una cantante y compositora Argentina que fusiona jazz, R&B y soul en su musica. Estudio jazz en londres y ha trabajado con artistas como Ca7riel y Cazzu. Su album "Atelier", grabado en los Angeles, refleja su estilo unico y ha sido bien recibido por la critica.</p>
     <a href="https://los40.com/2025/01/20/quien-es-chita-la-artista-argentina-que-inspirada-por-el-jazz-es-promesa-en-la-escena-urbana/" target="_blank">Ver más</a>
 
     <h3>Camila Nebbia</h3>
     <img src="https://f4.bcbits.com/img/0025139051_2.jpg" alt="Camila Nebbia" class="modal-imagen">
-    <p>Saxofonista y compositora Argentina radicada en Berlin, Nebbia es reconocida por su enfoque innovador en el jazz contemporaneo. Ha participado en festivales internacionales
-      como el JazzFest Berlin y ha lanzado varios albumes, inlcuyendo "Una ofrenda a la ausencia" y "Chrononaux".
-    </p>
+    <p>Saxofonista y compositora Argentina radicada en Berlin, Nebbia es reconocida por su enfoque innovador en el jazz contemporaneo. Ha participado en festivales internacionales como el JazzFest Berlin y ha lanzado varios albumes, inlcuyendo "Una ofrenda a la ausencia" y "Chrononaux".</p>
     <a href="https://de.wikipedia.org/wiki/Camila_Nebbia" target="_blank">Ver más</a>
   </div>
 </div>
 
+<!-- Modal Electrónica -->
 <div id="modal-electronica" class="modal" data-genero="electronica">
   <div class="modal-contenido">
     <span class="cerrar" data-close>&times;</span>
     <h2>Electrónica</h2>
     <h3>Six Sex</h3>
     <img src="https://indiehoy.com/wp-content/uploads/2025/03/six-sex.jpg" alt="Six Sex" class="modal-imagen">
-    <p>Six Sex es una cantante, compositora y productora Argentina que fusiona generos como regueton, dancehall, techno, trance y musica electronica.
-      Su estetica provocadora y letras que abordan temas de sexualidad, empoderamiento y cultura club la han consolidado como una des las figuras mas innovadoras
-      de la escena electronica latinoamericana. En 2025, lanzo su EP X-Sex, marcando un hito en su carrera.
-    </p>
+    <p>Six Sex es una cantante, compositora y productora Argentina que fusiona generos como regueton, dancehall, techno, trance y musica electronica. Su estetica provocadora y letras que abordan temas de sexualidad, empoderamiento y cultura club la han consolidado como una des las figuras mas innovadoras de la escena electronica latinoamericana. En 2025, lanzo su EP X-Sex, marcando un hito en su carrera.</p>
     <a href="https://es.wikipedia.org/wiki/Six_Sex" target="_blank">Ver más</a>
 
     <h3>Tomas K</h3>
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi3CI2OjURdgBUBi70Fd_dUm54qHwueUpD5A&s" alt="Tomas K" class="modal-imagen">
-    <p>Tomas K es un DJ y productor de electronica con una fuerte influencia del techno y el house. Con presentaciones en los principales clubes de Buenos Aires 
-      y otros paises de America Latina, ha logrado destacar por su enfoque innovador y su habilidad para crear ambientes vibrantes y energeticos en sus sets.
-      Sus producciones han sido bien recibidas por la critica y continuan cosechando exitos en plataformas como SoundCloud y Spotify.
-    </p>
+    <p>Tomas K es un DJ y productor de electronica con una fuerte influencia del techno y el house. Con presentaciones en los principales clubes de Buenos Aires y otros paises de America Latina, ha logrado destacar por su enfoque innovador y su habilidad para crear ambientes vibrantes y energeticos en sus sets. Sus producciones han sido bien recibidas por la critica y continuan cosechando exitos en plataformas como SoundCloud y Spotify.</p>
     <a href="https://www.instagram.com/tomas.k_/" target="_blank">Instagram</a>
   </div>
 </div>
 
+<!-- Modal Pop -->
 <div id="modal-pop" class="modal" data-genero="pop">
   <div class="modal-contenido">
     <span class="cerrar" data-close>&times;</span>
     <h2>Pop</h2>
     <h3>The Sistars</h3>
     <img src="https://i.scdn.co/image/ab6761610000e5eb57df7bdd1c7650f7c232bfc0" alt="The Sistars" class="modal-imagen">
-    <p>Las Hermanas Valentina y Maxima Tellado, conocidas como The Sistars, han ganado notoriedad por su estilo pop electronico y R&B.
-      Su album debut Femme Fatale fusiona generos como el pop urbano y el R&B, con colaboracion destacadas y una estetica visual que ha
-      capturado la atencion de la audiencia.
-    </p>
+    <p>Las Hermanas Valentina y Maxima Tellado, conocidas como The Sistars, han ganado notoriedad por su estilo pop electronico y R&B. Su album debut Femme Fatale fusiona generos como el pop urbano y el R&B, con colaboracion destacadas y una estetica visual que ha capturado la atencion de la audiencia.</p>
     <a href="https://www.instagram.com/thesistarsoficial/" target="_blank">Instagram</a>
 
     <h3>Gigi</h3>
     <img src="https://yt3.googleusercontent.com/Vjr95yyQxvfKtG1bfvSS6EUrA3I5bwegQiH33RojIcZphP2hu-k7MFBTP6R3YSIAL_4Fu2y9=s900-c-k-c0x00ffffff-no-rj" alt="Gigi" class="modal-imagen">
-    <p>Gigi, cantante y compositora Argentina, ha emergido en la escena pop y urbana con su estilo versatil que abarca desde el dancehall hasta el regueton.
-      Su primer album Sunset, lanzado en 2025, ha sido bien recibido por la critica y el publico, considerandola como una de las artistas emergentes mas prometedoras del genero.
-    </p>
+    <p>Gigi, cantante y compositora Argentina, ha emergido en la escena pop y urbana con su estilo versatil que abarca desde el dancehall hasta el regueton. Su primer album Sunset, lanzado en 2025, ha sido bien recibido por la critica y el publico, considerandola como una de las artistas emergentes mas prometedoras del genero.</p>
     <a href="https://es.wikipedia.org/wiki/Gigi_%28cantante%29" target="_blank">Ver más</a>
   </div>
 </div>
 
+<!-- Modal Flamenco -->
 <div id="modal-flamenco" class="modal" data-genero="flamenco">
   <div class="modal-contenido">
     <span class="cerrar" data-close>&times;</span>
     <h2>Flamenco</h2>
     <h3>José Carlos Hanza</h3>
     <img src="https://s3.ppllstatics.com/ideal/www/multimedia/2024/04/07/Jos%20Carlos%20Esteban-Hanza%20Fernndez_05_%C2%A9_Jess%20Amat%20-k0BB-U21020190764448KC-1200x840@Ideal.JPG" alt="José Carlos Hanza" class="modal-imagen">
-    <p>Pianista y compositor, Jose Carlos Hanza ha sido seleccionado para AIEnRuta flamencos 2025. Su enfoque innovador en el piano flamenco le ha permitido
-      colaborar con artistas de renombre y presentar su musica en importantes festivales.
-    </p>
+    <p>Pianista y compositor, Jose Carlos Hanza ha sido seleccionado para AIEnRuta flamencos 2025. Su enfoque innovador en el piano flamenco le ha permitido colaborar con artistas de renombre y presentar su musica en importantes festivales.</p>
     <a href="https://www.instagram.com/josecarloshanza/" target="_blank">Instagram</a>
 
     <h3>La Caita</h3>
     <img src="https://live.staticflickr.com/1290/4709491904_48151b94ae_z.jpg" alt="La Caita" class="modal-imagen">
-    <p>La Caita es una cantante de flamenco Argentino que se ha destacado en la escena local por su poderosa voz y su habilidad para fusionar el flamenco con generos como el tango 
-      y la musica popular Argentina. Su album Cantaora ha sido bien recibido, y ha realizado presentaciones en importantes festivales de flamenco en Argentina y en España.
-    </p>
+    <p>La Caita es una cantante de flamenco Argentino que se ha destacado en la escena local por su poderosa voz y su habilidad para fusionar el flamenco con generos como el tango y la musica popular Argentina. Su album Cantaora ha sido bien recibido, y ha realizado presentaciones en importantes festivales de flamenco en Argentina y en España.</p>
     <a href="https://www.instagram.com/caita.flamenca/" target="_blank">Instagram</a>
   </div>
 </div>
+
+
 <script src="index-2.js"></script>
 
 </body>
