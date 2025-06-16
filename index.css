@@ -112,14 +112,35 @@ body {
 }
 
 .sobre-nosotros {
+  position: relative;
   background-image: url("./Fotos/Fondo2.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 120px 20px; /* Ajustamos altura y margen interior */
-  color: white; /* Color del texto para que contraste */
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sobre-nosotros .overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* oscurece un poco el fondo para mejor lectura */
+  padding: 40px;
+  border-radius: 12px;
   text-align: center;
-  font-size: 1.2rem;
+  max-width: 900px;
+}
+
+.sobre-nosotros .overlay h2 {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.sobre-nosotros .overlay p {
+  color: white;
+  font-size: 1.3rem;
+  line-height: 1.5;
 }
 
 .separador {
